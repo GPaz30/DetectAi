@@ -1,0 +1,34 @@
+# .gitignore do DetectAI
+# Lista o que o Git NÃO envia para o GitHub.
+# Este arquivo fica na pasta principal do projeto, ao lado do app.py.
+
+# Ambiente virtual: cada pessoa do grupo cria o seu
+# (python -m venv .venv  e  pip install -r requirements.txt)
+.venv/
+venv/
+env/
+
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+
+# Modelos do YOLO: o programa baixa sozinho na primeira vez
+*.pt
+
+# Vídeos: grandes demais para o GitHub (limite de 100 MB por arquivo).
+# Compartilhem pelo Google Drive ou outro meio.
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+
+# Arquivos do sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+Videos/
+# As pastas dataset/ (exemplos de treino) e modelo/ (modelo treinado) VÃO para
+# o GitHub, para o grupo não precisar treinar de novo. Se o envio ficar grande
+# demais, descomente a linha abaixo para não enviar os exemplos:
+# dataset/

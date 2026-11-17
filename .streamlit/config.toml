@@ -1,0 +1,12 @@
+# Configuração do Streamlit para o DetectAI.
+# Precisa ficar na pasta .streamlit, dentro da pasta do projeto.
+
+[client]
+# "minimal" tira o botão Deploy e as opções de desenvolvedor do canto superior
+# direito. O aviso de execução ("Running...") é escondido pelo CSS do app.py;
+# para interromper um processamento, use o botão "Parar" da própria página.
+toolbarMode = "minimal"
+
+[browser]
+# Não envia estatísticas de uso para o Streamlit.
+gatherUsageStats = false
